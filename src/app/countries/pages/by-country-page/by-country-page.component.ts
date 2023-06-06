@@ -23,7 +23,7 @@ export class ByCountryPageComponent implements OnInit{
 
     searchByValue( term: string ): void {
       this.isLoading = true;
-        this.countriesService.searhCountry(term).subscribe(countries => {
+        this.countriesService.searchCountry(term).subscribe(countries => {
             this.countries = countries;
           this.isLoading = false;
 
